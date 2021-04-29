@@ -1,0 +1,14 @@
+setTitle("get light engineering block (ph)")
+setDescription("Obtain a light engineering block.")
+setIcon(<immersiveengineering:metal_decoration0:4>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/getplates")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<immersiveengineering:metal_decoration0:4>)
+setPos(134,-26)

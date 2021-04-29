@@ -1,0 +1,16 @@
+setTitle("get ground netherrack (ph)")
+setDescription("Grind Netherrack in the millstone.")
+setIcon(<betterwithmods:material:15>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+
+addParent("triumph:middle/TechRoute/millstone")
+addParent("triumph:middle/TechRoute/enternether")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<betterwithmods:material:15>)
+setPos(-30,-188)

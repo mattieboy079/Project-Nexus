@@ -1,0 +1,15 @@
+setTitle("Environmentally sound")
+setDescription("Craft a wind mill.")
+setIcon(<betterwithmods:axle_generator>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(false)
+
+addParent("triumph:middle/root")
+hideLines()
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<betterwithmods:axle_generator>)
+setPos(-124,-188)

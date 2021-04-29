@@ -1,0 +1,14 @@
+setTitle("get nitor (ph)")
+setDescription("Obtain Nitor.")
+setIcon(<thaumcraft:nitor_yellow>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/getpowder")
+alwaysVisible()
+
+c = addCriteria("getspreader","minecraft:inventory_changed")
+c.addItem(<thaumcraft:nitor_yellow>)
+setPos(180,-61)

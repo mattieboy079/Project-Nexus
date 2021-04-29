@@ -1,0 +1,15 @@
+setTitle("get botania flower (ph)")
+setDescription("Obtain a mytical flower by exploring the world and finding some.")
+setIcon(<botania:flower:2>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+
+addParent("triumph:stone/root")
+alwaysVisible()
+hideLines()
+
+c = addCriteria("getflower","minecraft:inventory_changed")
+c.addItem(<botania:flower:*>)
+setPos(180,233)

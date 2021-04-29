@@ -1,0 +1,14 @@
+setTitle("get steel scaffold (ph)")
+setDescription("Obtain a steel scaffold.")
+setIcon(<immersiveengineering:metal_decoration1:1>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/getsteelrod")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<immersiveengineering:metal_decoration1:1>)
+setPos(97,66)

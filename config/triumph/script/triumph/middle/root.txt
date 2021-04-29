@@ -1,0 +1,15 @@
+setIcon(<minecraft:iron_ingot>)
+setTitle("Middle Ages")
+setDescription("")
+setBackground("minecraft:textures/blocks/cobblestone.png")
+
+setFrameType("challenge")
+setHidden(true)
+
+setHidden(true)
+addCriteria("impossible","minecraft:impossible")
+
+setShowToast(false)
+
+setAnnounceToChat(false)
+setPos(-144,-124)

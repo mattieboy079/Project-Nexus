@@ -1,0 +1,16 @@
+setTitle("make squeezer (ph)")
+setDescription("Build a squeezer.")
+setIcon(<immersiveengineering:metal_multiblock, meta:7>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/getle")
+addParent("triumph:indus/TechRoute/gethe")
+addParent("triumph:indus/TechRoute/getscaffold")
+alwaysVisible()
+
+c = addCriteria("squeezer","immersiveengineering:multiblock_formed")
+c.setMultiblock("IE:Squeezer")
+setPos(203,66)

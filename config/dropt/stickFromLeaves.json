@@ -1,0 +1,38 @@
+{
+    "rules": [
+        {
+            "match": {
+                "blocks": {
+                    "blocks": [
+                        "minecraft:leaves"
+                    ]
+                }
+            },
+            "replaceStrategy": "ADD",
+            "drops":[
+                {
+                    "selector":{
+                        "weight":{
+                            "value": 10
+                        }
+                    },
+                    "item":{
+                        "items":[
+                            "minecraft:stick"
+                        ],
+                        "quantity":{
+                            "fixed": 1
+                        }
+                    }
+                },
+                {
+                    "selector":{
+                        "weight":{
+                            "value": 90
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

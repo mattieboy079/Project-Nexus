@@ -1,0 +1,25 @@
+setTitle("All you can heat.")
+setDescription("Craft a sariras.")
+setIcon(<primal:smelter>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/07e.getwetbricks")
+alwaysVisible()
+
+c = addCriteria("getsariras","minecraft:inventory_changed")
+c.addItem(<primal:smelter>)
+
+c = addCriteria("getsariras","minecraft:inventory_changed")
+c.addItem(<primal:smelter:1>)
+
+c = addCriteria("getsariras","minecraft:inventory_changed")
+c.addItem(<primal:smelter:2>)
+
+c = addCriteria("getsariras","minecraft:inventory_changed")
+c.addItem(<primal:smelter:3>)
+
+setPos(213,117)

@@ -1,0 +1,16 @@
+setTitle("get smeltery (ph)")
+setDescription("Craft a Smeltery Controller.")
+setIcon(<tconstruct:smeltery_controller>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+
+addParent("triumph:bronze/MagicRoute/getoctine")
+addRewardFunction("triumph:givemiddleages")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<tconstruct:smeltery_controller>)
+setPos(416,-7)

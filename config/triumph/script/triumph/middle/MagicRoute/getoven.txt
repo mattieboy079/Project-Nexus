@@ -1,0 +1,15 @@
+setTitle("get witches oven (ph)")
+setDescription("Craft a Witches' Oven.")
+setIcon(<bewitchment:witches_oven>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:middle/TechRoute/getironingot")
+alwaysVisible()
+
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<bewitchment:witches_oven>)
+setPos(-146,-124)

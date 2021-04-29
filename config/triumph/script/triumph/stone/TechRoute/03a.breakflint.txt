@@ -1,0 +1,20 @@
+setIcon(<primitivetools:flint_flake>)
+setDescription("Flake a flint by right-clicking flint on a hard surface.")
+setTitle("Flint Flakes")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+addParent("triumph:stone/TechRoute/02.getfiber")
+//alwaysVisible()
+setRequirements("any")
+
+c = addCriteria("getflint","minecraft:inventory_changed")
+c.addItem(<primitivetools:flint_flake>)
+
+c1 = addCriteria("getflint1","minecraft:inventory_changed")
+c1.addItem(<primitivetools:flint_shard>)
+
+c2 = addCriteria("getflint2","minecraft:inventory_changed")
+c2.addItem(<primitivetools:flint_point>)
+setPos(11,97)

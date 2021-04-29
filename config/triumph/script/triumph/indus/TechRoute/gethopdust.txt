@@ -1,0 +1,15 @@
+setTitle("get HOP dust (ph)")
+setDescription("Obtain HOP dust.")
+setIcon(<immersiveengineering:material:18>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/getcokedust")
+addParent("triumph:indus/TechRoute/makesqueeze")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<immersiveengineering:material:18>)
+setPos(256,66)

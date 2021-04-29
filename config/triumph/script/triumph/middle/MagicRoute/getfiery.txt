@@ -1,0 +1,16 @@
+setTitle("get fiery unguent (ph)")
+setDescription("Obtain Fiery Unguent.")
+setIcon(<bewitchment:fiery_unguent>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:middle/MagicRoute/getcloudy")
+addParent("triumph:middle/MagicRoute/getdistill")
+alwaysVisible()
+
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<bewitchment:fiery_unguent>)
+setPos(-71,-124)

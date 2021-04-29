@@ -1,0 +1,18 @@
+setTitle("The Bronze Age!")
+setDescription("Get a bronze ingot using the sariras.")
+setIcon(<thermalfoundation:material:163>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+setFrameType("challenge")
+
+addParent("triumph:stone/TechRoute/12.getblend")
+addRewardFunction("triumph:givebronzeage")
+alwaysVisible()
+
+c = addCriteria("getingot","minecraft:inventory_changed")
+c.addItem(<thermalfoundation:material:163>)
+
+setPos(385,-12)

@@ -1,0 +1,32 @@
+setTitle("Ace of Spades")
+setDescription("Craft a primitive shovel.")
+setIcon(<primitivetools:primitive_spade_cwf>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/03a.breakflint")
+alwaysVisible()
+
+
+c = addCriteria("getspade","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_spade_cwf>)
+
+c = addCriteria("getspade","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_spade_cwv>)
+
+c = addCriteria("getspade","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_spade_cwl>)
+
+c = addCriteria("getspade","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_spade_cbf>)
+
+c = addCriteria("getspade","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_spade_cbv>)
+
+c = addCriteria("getspade","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_spade_cbl>)
+
+setPos(53,63)

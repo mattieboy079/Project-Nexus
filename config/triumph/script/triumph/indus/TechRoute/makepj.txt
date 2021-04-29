@@ -1,0 +1,16 @@
+setTitle("make crusher (ph)")
+setDescription("Build a crusher.")
+setIcon(<immersiveengineering:metal_multiblock, meta:7>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/getle")
+addParent("triumph:indus/TechRoute/gethe")
+addParent("triumph:indus/TechRoute/getscaffold")
+alwaysVisible()
+
+c = addCriteria("crusher","immersiveengineering:multiblock_formed")
+c.setMultiblock("IP:Crusher")
+setPos(151,152)

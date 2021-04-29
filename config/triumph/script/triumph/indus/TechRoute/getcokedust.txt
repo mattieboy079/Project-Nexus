@@ -1,0 +1,14 @@
+setTitle("get coke dust (ph)")
+setDescription("Obtain coke dust.")
+setIcon(<immersiveengineering:material:17>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/makecrush")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<immersiveengineering:material:17>)
+setPos(239,31)

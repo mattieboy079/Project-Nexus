@@ -1,0 +1,15 @@
+setTitle("get terra spore (ph)")
+setDescription("Obtain Terra Spores by attacking tall grass.")
+setIcon(<roots:terra_spores>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+
+addParent("triumph:stone/root")
+alwaysVisible()
+hideLines()
+
+c = addCriteria("getterra","minecraft:inventory_changed")
+c.addItem(<roots:terra_spores>)
+setPos(-82,185)

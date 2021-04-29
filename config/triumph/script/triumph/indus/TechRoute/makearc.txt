@@ -1,0 +1,14 @@
+setTitle("make arc furnace (ph)")
+setDescription("Build an arc furnace.")
+setIcon(<immersiveengineering:metal_multiblock, meta:13>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/getelec")
+alwaysVisible()
+
+c = addCriteria("crusher","immersiveengineering:multiblock_formed")
+c.setMultiblock("IE:ArcFurnace")
+setPos(355,98)

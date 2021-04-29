@@ -1,0 +1,25 @@
+setTitle("Brick or Treat")
+setDescription("Get a wet brick.")
+setIcon(<primal:mud_brick_wet>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/06e.getbrickmold")
+alwaysVisible()
+
+c = addCriteria("getwetbrick","minecraft:inventory_changed")
+c.addItem(<primal:mud_brick_wet>)
+
+c = addCriteria("getwetbrick","minecraft:inventory_changed")
+c.addItem(<primal:terra_brick_wet>)
+
+c = addCriteria("getwetbrick","minecraft:inventory_changed")
+c.addItem(<primal:cinis_brick_wet>)
+
+c = addCriteria("getwetbrick","minecraft:inventory_changed")
+c.addItem(<primal:adobe_brick_wet>)
+
+setPos(173,117)

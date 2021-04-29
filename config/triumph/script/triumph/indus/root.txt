@@ -1,0 +1,14 @@
+setIcon(<immersiveengineering:metal:8>)
+setTitle("Industrial Age")
+setDescription("")
+setBackground("minecraft:textures/blocks/cobblestone.png")
+
+setFrameType("challenge")
+setHidden(true)
+
+setHidden(true)
+addCriteria("impossible","minecraft:impossible")
+
+setShowToast(false)
+
+setAnnounceToChat(false)

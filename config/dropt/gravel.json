@@ -1,0 +1,68 @@
+{
+    "rules": [
+        {
+            "match": {
+                "blocks": {
+                    "blocks": [
+                        "minecraft:gravel:*"
+                    ]
+                },
+                "harvester": {
+                    "heldItemMainHand": {
+                        "harvestLevel": "shovel;0;-1"
+                    }
+                }
+            },
+            "replaceStrategy": "REPLACE_ALL",
+            "drops": [
+                {
+                    
+                    "item": {
+                        "items": [
+                            "minecraft:gravel"
+                        ],
+                        "quantity":{
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "match": {
+                "blocks": {
+                    "blocks": [
+                        "minecraft:gravel:*"
+                    ]
+                },
+                "harvester": {
+                    "heldItemMainHand": {
+                        "type": "BLACKLIST",
+                        "items": [
+                            "exnihilocreatio:hammer_wood:*",
+                            "exnihilocreatio:hammer_stone:*",
+                            "exnihilocreatio:hammer_iron:*",
+                            "exnihilocreatio:hammer_gold:*",
+                            "exnihilocreatio:hammer_diamond:*"
+                        ],
+                        "harvestLevel": "shovel;0;-1"
+                    }
+                }
+            },
+            "replaceStrategy": "REPLACE_ALL",
+            "drops": [
+                {
+                    
+                    "item": {
+                        "items": [
+                            "minecraft:flint"
+                        ],
+                        "quantity":{
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

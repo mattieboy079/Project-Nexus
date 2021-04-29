@@ -1,0 +1,14 @@
+setTitle("Hot Topic")
+setDescription("Craft a Melter.")
+setIcon(<tcomplement:melter>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/TechRoute/bronzeingot")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<tcomplement:melter>)
+setPos(-99,-94)

@@ -1,0 +1,15 @@
+setTitle("get pyre (ph)")
+setDescription("Craft a Pyre.")
+setIcon(<roots:bonfire>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/MagicRoute/getmoss")
+addParent("triumph:stone/MagicRoute/getwildroot")
+
+c = addCriteria("getterra","minecraft:inventory_changed")
+c.addItem(<roots:bonfire>)
+setPos(79,229)

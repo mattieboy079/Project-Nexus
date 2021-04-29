@@ -1,0 +1,35 @@
+import mods.ItemStages;
+
+//Goedgekeurd
+ItemStages.stageModItems("ModernAge", "mekanism");
+ItemStages.stageModItems("ModernAge", "mekanismgenerators");
+ItemStages.stageModItems("ModernAge", "mekores");
+ItemStages.stageModItems("ModernAge", "enderio");
+ItemStages.stageModItems("ModernAge", "appliedenergistics2");
+ItemStages.stageModItems("ModernAge", "rebornstorage");
+ItemStages.stageModItems("IndustrialAge", "simplefluidtanks");
+ItemStages.stageModItems("ModernAge", "galacticraftcore");
+ItemStages.stageModItems("ModernAge", "galaxyspace");
+ItemStages.stageModItems("ModernAge", "galacticraftplanets");
+ItemStages.stageModItems("ModernAge", "moreplanets");
+ItemStages.stageModItems("ModernAge", "gendustry");
+ItemStages.stageModItems("IndustrialAge", "immersiverailroading");
+ItemStages.stageModItems("IndustrialAge", "industrialrenewal");
+ItemStages.stageModItems("IndustrialAge", "integrateddynamics");
+ItemStages.stageModItems("IndustrialAge", "railcraft");
+ItemStages.stageModItems("MiddleAges", "mcwbridges");
+ItemStages.stageModItems("MiddleAges", "weather2");
+ItemStages.stageModItems("FutureAge", "powersuits");
+ItemStages.stageModItems("ModernAge", "opencomputers");
+ItemStages.stageModItems("IndustrialAge", "immersiveintelligence");
+ItemStages.stageModItems("ModernAge", "nuclearcraft");
+ItemStages.stageModItems("IndustrialAge", "immersivepetroleum");
+ItemStages.stageModItems("ModernAge", "rftools");
+ItemStages.stageModItems("ModernAge", "rftoolscontrol");
+ItemStages.stageModItems("ModernAge", "thermalinnovation");
+ItemStages.stageModItems("IndustrialAge", "immersivecables");
+ItemStages.stageModItems("IndustrialAge", "immersivetech");
+ItemStages.stageModItems("IndustrialAge", "immersiveposts");
+ItemStages.stageModItems("IndustrialAge", "mts");
+ItemStages.stageModItems("ModernAge", "fossil");
+ItemStages.stageModItems("IndustrialAge", "pollutantpump");

@@ -1,0 +1,15 @@
+setTitle("get luminous crafting table (ph)")
+setDescription("Find an Astral Sorcery temple and place down a Crafting Table.")
+setIcon(<astralsorcery:blockaltar>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/TechRoute/bronzeingot")
+alwaysVisible()
+hideLines()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<astralsorcery:blockaltar>)
+setPos(147,-159)

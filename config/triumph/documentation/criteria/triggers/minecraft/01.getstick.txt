@@ -1,0 +1,14 @@
+setTitle("Twig Bang Theory")
+setDescription("Obtain a stick by breaking leaves.")
+setIcon("minecraft:stick")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+addParent("triumph:stone/root")
+alwaysVisible()
+hideLines()
+
+c = addCriteria("getstick","minecraft:inventory_changed")
+c.addItem("minecraft:stick")
+setPos(-82,97)

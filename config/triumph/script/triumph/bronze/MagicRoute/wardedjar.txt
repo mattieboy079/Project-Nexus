@@ -1,0 +1,14 @@
+setTitle("get warded jar (ph)")
+setDescription("Craft a Warded Jar.")
+setIcon(<thaumcraft:jar_normal>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/essentiasmelter")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<thaumcraft:jar_normal>)
+setPos(228,31)

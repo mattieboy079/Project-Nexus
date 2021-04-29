@@ -1,0 +1,14 @@
+setTitle("ISn'T iT IRon PiCk")
+setDescription("Craft an iron pickaxe head.")
+setIcon(<tconstruct:pick_head, nbt:{Material: "iron"}>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:middle/TechRoute/getironingot")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<tconstruct:pick_head, nbt:{Material: "iron"}>)
+setPos(-144,-251)

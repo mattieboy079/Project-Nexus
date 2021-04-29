@@ -1,0 +1,14 @@
+setTitle("get octine (ph)")
+setDescription("Obtain an Octine ingot from the Betweenlands.")
+setIcon(<thebetweenlands:octine_ingot>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/gettalisman")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<thebetweenlands:octine_ingot>)
+setPos(350,-7)

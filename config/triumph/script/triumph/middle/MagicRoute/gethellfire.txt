@@ -1,0 +1,15 @@
+setTitle("get hellfire bottle (ph)")
+setDescription("Distill Bottled Hellfire.")
+setIcon(<bewitchment:bottled_hellfire>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(false)
+
+addParent("triumph:middle/MagicRoute/getfiery")
+alwaysVisible()
+
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<bewitchment:bottled_hellfire>)
+setPos(-30,-124)

@@ -1,0 +1,16 @@
+setTitle("get aluminium ingot (ph)")
+setDescription("Obtain an aluminium ingot.")
+setIcon(<immersiveengineering:metal:1>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+setFrameType("challenge")
+
+addParent("triumph:indus/TechRoute/makearc")
+addRewardFunction("triumph:givemodernage")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<immersiveengineering:metal:1>)
+setPos(398,98)

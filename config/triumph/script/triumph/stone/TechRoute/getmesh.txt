@@ -1,0 +1,16 @@
+setTitle("get mesh (ph)")
+setDescription("Craft flint stiffened mesh.")
+setIcon(<exnihilocreatio:item_mesh:2>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+
+addParent("triumph:stone/TechRoute/05c.getsieve")
+alwaysVisible()
+
+c = addCriteria("getmesh","minecraft:inventory_changed")
+c.addItem(<exnihilocreatio:item_mesh:2>)
+setPos(130,45)

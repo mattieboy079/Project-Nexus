@@ -1,0 +1,16 @@
+setTitle("get crucible (ph)")
+setDescription("Convert Cualdron into a Crucible.")
+setIcon(<thaumcraft:crucible>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/getmagicbook")
+alwaysVisible()
+
+c = addCriteria("getspreader","triumph:right_click_block")
+c.setItem(<thaumcraft:salis_mundus>)
+c.setBlock(<minecraft:cauldron>)
+
+setPos(45,-73)

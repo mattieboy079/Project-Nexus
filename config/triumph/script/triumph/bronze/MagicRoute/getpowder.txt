@@ -1,0 +1,16 @@
+
+setTitle("get illumination powder (ph)")
+setDescription("Obtain some Illumination Powder")
+setIcon(<astralsorcery:itemusabledust>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/getmanaspreader")
+addParent("triumph:bronze/MagicRoute/getltable")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<astralsorcery:itemusabledust>)
+setPos(163,-107)

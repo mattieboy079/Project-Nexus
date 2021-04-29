@@ -1,0 +1,67 @@
+setTitle("Stop!")
+setDescription("Craft a primitive hammer.")
+setIcon(<primitivetools:primitive_hammer_swf>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/03a.breakflint")
+alwaysVisible()
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_swf>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_dwf>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_gwf>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_swv>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_dwv>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_gwv>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_swl>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_dwl>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_gwl>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_sbf>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_dbf>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_gbf>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_sbv>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_dbv>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_gbv>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_sbl>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_dbl>)
+
+c = addCriteria("gethammer","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hammer_gbl>)
+
+setPos(53,-12)

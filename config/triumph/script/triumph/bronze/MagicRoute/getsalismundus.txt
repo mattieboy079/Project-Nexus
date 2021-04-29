@@ -1,0 +1,14 @@
+setTitle("get salis mundus (ph)")
+setDescription("Craft Salis Mundus.")
+setIcon(<thaumcraft:salis_mundus>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/TechRoute/gettools")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<thaumcraft:salis_mundus>)
+setPos(-15,-58)

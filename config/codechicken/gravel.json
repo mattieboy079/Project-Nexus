@@ -1,0 +1,80 @@
+{
+    "rules": [
+        {
+            "match": {
+                "blocks": {
+                    "blocks": [
+                        "minecraft:gravel:*"
+                    ]
+                },
+                "harvester": {
+                    "heldItemMainHand": {
+                        "harvestLevel": "shovel;0;-1"
+                    }
+                }
+            },
+            "replaceStrategy": "REPLACE_ALL",
+            "drops": [
+                {
+                    "selector":{
+                        "weight":{
+                            "value": 90
+                        }
+                    },
+                    "item": {
+                        "items": [
+                            "minecraft:gravel"
+                        ],
+                        "quantity":{
+                            "fixed": 1
+                        }
+                    }
+                },
+                {
+                    "selector":{
+                        "weight":{
+                            "value": 10
+                        }
+                    },
+                    "item": {
+                        "items": [
+                            "minecraft:flint"
+                        ],
+                        "quantity":{
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "match": {
+                "blocks": {
+                    "blocks": [
+                        "minecraft:gravel:*"
+                    ]
+                },
+                "harvester": {
+                    "heldItemMainHand": {
+                        "type": "BLACKLIST",
+                        "harvestLevel": "shovel;0;-1"
+                    }
+                }
+            },
+            "replaceStrategy": "REPLACE_ALL",
+            "drops": [
+                {
+                    
+                    "item": {
+                        "items": [
+                            "minecraft:flint"
+                        ],
+                        "quantity":{
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

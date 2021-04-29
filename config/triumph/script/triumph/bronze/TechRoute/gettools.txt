@@ -1,0 +1,29 @@
+setTitle("You deserve a metal!")
+setDescription("Craft bronze tools.")
+setIcon(<tconstruct:pick_head, nbt:{Material: "bronze"}>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:bronze/TechRoute/getmelter")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<tconstruct:pick_head, nbt:{Material: "bronze"}>)
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<tconstruct:shovel_head, nbt:{Material: "bronze"}>)
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<tconstruct:axe_head, nbt:{Material: "bronze"}>)
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<tconstruct:sword_blade, nbt:{Material: "bronze"}>)
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<tconstruct:kama_head, nbt:{Material: "bronze"}>)
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<tconstruct:scythe_head, nbt:{Material: "bronze"}>)
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<tconstruct:knife_blade, nbt:{Material: "bronze"}>)
+
+
+setPos(-50,-94)

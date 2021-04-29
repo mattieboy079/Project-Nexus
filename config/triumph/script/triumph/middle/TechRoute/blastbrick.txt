@@ -1,0 +1,14 @@
+setTitle("get blast brick (ph)")
+setDescription("Bake Nether bricks in a stoked kiln.")
+setIcon(<immersiveengineering:stone_decoration:1>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:middle/TechRoute/gethibachi")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<immersiveengineering:stone_decoration:1>)
+setPos(126,-157)

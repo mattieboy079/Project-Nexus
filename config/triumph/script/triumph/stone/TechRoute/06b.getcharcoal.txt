@@ -1,0 +1,17 @@
+setTitle("Heat Treatment")
+setDescription("Obtain charcoal by burning buried log stacks.")
+setIcon(<primal:charcoal_high>)
+
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/05b.logstack")
+alwaysVisible()
+
+c = addCriteria("getcharcoal","minecraft:inventory_changed")
+c.addItem(<minecraft:coal:1>)
+
+setPos(173,9)

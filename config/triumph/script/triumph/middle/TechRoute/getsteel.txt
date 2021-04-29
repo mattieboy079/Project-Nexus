@@ -1,0 +1,16 @@
+setTitle("The Industrial Age!")
+setDescription("Turn iron into steel.")
+setIcon(<thermalfoundation:material:160>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+setFrameType("challenge")
+
+addParent("triumph:middle/TechRoute/blastbrick")
+addRewardFunction("triumph:giveindustrialage")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<thermalfoundation:material:160>)
+setPos(164,-157)

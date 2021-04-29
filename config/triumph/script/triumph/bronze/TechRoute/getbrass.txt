@@ -1,0 +1,14 @@
+setTitle("get brass (ph)")
+setDescription("Obtain a brass ingot.")
+setIcon(<techreborn:ingot:1>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/TechRoute/getalloyer")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<techreborn:ingot:1>)
+setPos(-18,-170)

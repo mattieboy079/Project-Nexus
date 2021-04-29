@@ -1,0 +1,15 @@
+setTitle("get talisman (ph)")
+setDescription("Obtain Swamp Talisman.")
+setIcon(<thebetweenlands:swamp_talisman>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/getrunicmatrix")
+addParent("triumph:bronze/MagicRoute/wardedjar")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<thebetweenlands:swamp_talisman>)
+setPos(293,-7)

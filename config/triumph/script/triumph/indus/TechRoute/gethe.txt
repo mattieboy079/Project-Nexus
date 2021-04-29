@@ -1,0 +1,14 @@
+setTitle("get heavy engineering block (ph)")
+setDescription("Obtain a heavy engineering block.")
+setIcon(<immersiveengineering:metal_decoration0:5>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/getplates")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<immersiveengineering:metal_decoration0:5>)
+setPos(134,5)

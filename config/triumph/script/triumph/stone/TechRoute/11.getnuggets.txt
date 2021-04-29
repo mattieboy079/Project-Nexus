@@ -1,0 +1,21 @@
+setTitle("These aren't made of chicken...")
+setDescription("Obtain copper and tin nuggets.")
+setIcon(<thermalfoundation:material:192>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/06b.getcharcoal")
+addParent("triumph:stone/TechRoute/06c.getorepiece")
+addParent("triumph:stone/TechRoute/10e.getsariras")
+alwaysVisible()
+
+c = addCriteria("getcopper","minecraft:inventory_changed")
+c.addItem(<thermalfoundation:material:192>)
+
+c = addCriteria("gettin","minecraft:inventory_changed")
+c.addItem(<thermalfoundation:material:193>)
+
+setPos(275,36)

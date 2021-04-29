@@ -1,0 +1,14 @@
+setTitle("get essentia smelter (ph)")
+setDescription("Craft Essentia Smeltery.")
+setIcon(<thaumcraft:smelter_basic>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/getresearchtable")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<thaumcraft:smelter_basic>)
+setPos(141,31)

@@ -1,0 +1,15 @@
+setTitle("get moss (ph)")
+setDescription("Obtain moss by right-clicking mossy cobblestone with a wooden knife.")
+setIcon(<roots:terra_moss>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/MagicRoute/getknife2")
+addParent("triumph:stone/MagicRoute/getmossycob")
+
+c = addCriteria("getterra","minecraft:inventory_changed")
+c.addItem(<roots:terra_moss>)
+setPos(27,244)

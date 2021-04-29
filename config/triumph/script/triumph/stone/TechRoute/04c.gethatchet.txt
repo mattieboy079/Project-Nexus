@@ -1,0 +1,32 @@
+setTitle("Trees Beware!")
+setDescription("Craft a primitive hatchet.")
+setIcon(<primitivetools:primitive_hatchet_cwf>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/03a.breakflint")
+alwaysVisible()
+
+
+c = addCriteria("gethatchet","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_hatchet_cwf>)
+
+c1 = addCriteria("gethatchet","minecraft:inventory_changed")
+c1.addItem(<primitivetools:primitive_hatchet_cwv>)
+
+c2 = addCriteria("gethatchet","minecraft:inventory_changed")
+c2.addItem(<primitivetools:primitive_hatchet_cwl>)
+
+c3 = addCriteria("gethatchet","minecraft:inventory_changed")
+c3.addItem(<primitivetools:primitive_hatchet_cbf>)
+
+c4 = addCriteria("gethatchet","minecraft:inventory_changed")
+c4.addItem(<primitivetools:primitive_hatchet_cbv>)
+
+c5 = addCriteria("gethatchet","minecraft:inventory_changed")
+c5.addItem(<primitivetools:primitive_hatchet_cbl>)
+
+setPos(53,27)

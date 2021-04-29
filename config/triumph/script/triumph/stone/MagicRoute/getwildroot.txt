@@ -1,0 +1,15 @@
+setTitle("Get Wild!")
+setDescription("Obtain Wildroot by attacking tall grass.")
+setIcon(<roots:wildroot>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+
+addParent("triumph:stone/root")
+alwaysVisible()
+hideLines()
+
+c = addCriteria("getroot","minecraft:inventory_changed")
+c.addItem(<roots:wildroot>)
+setPos(62,263)

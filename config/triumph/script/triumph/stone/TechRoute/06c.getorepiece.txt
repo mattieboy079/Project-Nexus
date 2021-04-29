@@ -1,0 +1,20 @@
+setTitle("Plentiful Soil")
+setDescription("Obtain copper and tin pieces by sifting gravel.")
+setIcon(<exnihilocreatio:item_ore_copper>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/getmesh")
+addParent("triumph:stone/TechRoute/05d.getgravel")
+alwaysVisible()
+
+c = addCriteria("getcopper","minecraft:inventory_changed")
+c.addItem(<exnihilocreatio:item_ore_copper>)
+
+c = addCriteria("gettin","minecraft:inventory_changed")
+c.addItem(<exnihilocreatio:item_ore_tin>)
+
+setPos(173,63)

@@ -1,0 +1,17 @@
+setTitle("The Middle Ages!")
+setDescription("Beware of rats.")
+setIcon(<minecraft:iron_ingot>)
+
+setShowToast(false)
+setAnnounceToChat(false)
+setRequirements("all")
+setRequiresParent(false)
+setFrameType("challenge")
+
+addParent("triumph:middle/root")
+hideLines()
+alwaysVisible()
+
+c = addCriteria("getingot","triumph:gamestage")
+c.setStage("middleages")
+setPos(-181,-188)

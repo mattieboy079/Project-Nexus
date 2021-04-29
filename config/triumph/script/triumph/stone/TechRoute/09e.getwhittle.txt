@@ -1,0 +1,15 @@
+setTitle("Get whittle sticks (ph)")
+setDescription("Craft whittled fire sticks.")
+setIcon(<primal_tech:fire_sticks>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/01.getstick")
+alwaysVisible()
+
+c = addCriteria("getwhittle","minecraft:inventory_changed")
+c.addItem(<primal_tech:fire_sticks, nbt:{}>)
+setPos(-34,133)

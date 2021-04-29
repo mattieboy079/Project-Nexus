@@ -1,0 +1,13 @@
+setIcon(<primitivetools:plant_fiber>)
+setDescription("Obtain plant fiber by breaking some tall grass.")
+setTitle("Positive Fibers")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+addParent("triumph:stone/TechRoute/01.getstick")
+alwaysVisible()
+
+c = addCriteria("getfiber","minecraft:inventory_changed")
+c.addItem(<primitivetools:plant_fiber>)
+setPos(-34,97)

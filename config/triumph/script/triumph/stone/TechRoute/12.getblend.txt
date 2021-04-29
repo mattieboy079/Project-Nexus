@@ -1,0 +1,17 @@
+setTitle("Amateur metallurgist")
+setDescription("Crush tin and copper nuggets to get bronze blend.")
+setIcon(<thermalfoundation:material:99>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/11.getnuggets")
+addParent("triumph:stone/TechRoute/04a.gethammer")
+alwaysVisible()
+
+c = addCriteria("getblend","minecraft:inventory_changed")
+c.addItem(<thermalfoundation:material:99>)
+
+setPos(340,-12)

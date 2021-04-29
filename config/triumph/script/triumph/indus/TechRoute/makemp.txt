@@ -1,0 +1,16 @@
+setTitle("make metal press (ph)")
+setDescription("Build a metal press.")
+setIcon(<immersiveengineering:metal_multiblock, meta:0>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/getle")
+addParent("triumph:indus/TechRoute/gethe")
+addParent("triumph:indus/TechRoute/getscaffold")
+alwaysVisible()
+
+c = addCriteria("metalpress","immersiveengineering:multiblock_formed")
+c.setMultiblock("IE:MetalPress")
+setPos(203,98)

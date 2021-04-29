@@ -1,0 +1,17 @@
+setTitle("The Industrial Age!")
+setDescription("Steaming on through.")
+setIcon(<immersiveengineering:metal:8>)
+
+setShowToast(false)
+setAnnounceToChat(false)
+setRequirements("all")
+setRequiresParent(false)
+setFrameType("challenge")
+
+addParent("triumph:indus/root")
+hideLines()
+alwaysVisible()
+
+c = addCriteria("getingot","triumph:gamestage")
+c.setStage("industrialage")
+setPos(1,29)

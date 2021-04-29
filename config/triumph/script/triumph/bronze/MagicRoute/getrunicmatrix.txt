@@ -1,0 +1,14 @@
+setTitle("get runic matrix (ph)")
+setDescription("Craft a Runic Matrix.")
+setIcon(<thaumcraft:infusion_matrix>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/getnitor")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<thaumcraft:infusion_matrix>)
+setPos(228,-45)

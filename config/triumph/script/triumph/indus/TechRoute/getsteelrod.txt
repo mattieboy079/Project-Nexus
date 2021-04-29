@@ -1,0 +1,14 @@
+setTitle("get steel rod (ph)")
+setDescription("Obtain a steel rod.")
+setIcon(<immersiveengineering:material:2>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/getsteel")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<immersiveengineering:material:2>)
+setPos(41,66)

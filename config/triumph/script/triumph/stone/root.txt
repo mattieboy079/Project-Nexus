@@ -1,0 +1,11 @@
+setIcon("primitivetools:primitive_hatchet_cwf")
+setTitle("Stone Age")
+setDescription("")
+setBackground("minecraft:textures/blocks/cobblestone.png")
+
+setHidden(true)
+addCriteria("impossible","minecraft:impossible")
+
+setShowToast(false)
+
+setAnnounceToChat(false)

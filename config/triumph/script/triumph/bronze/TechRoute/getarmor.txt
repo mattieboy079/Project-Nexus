@@ -1,0 +1,21 @@
+setTitle("Always use protection")
+setDescription("Craft some bronze armor.")
+setIcon(<thermalfoundation:armor.helmet_bronze>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:bronze/TechRoute/getmelter")
+alwaysVisible()
+
+c = addCriteria("geth","minecraft:inventory_changed")
+c.addItem(<thermalfoundation:armor.helmet_bronze>)
+c = addCriteria("getp","minecraft:inventory_changed")
+c.addItem(<thermalfoundation:armor.plate_bronze>)
+c = addCriteria("getb","minecraft:inventory_changed")
+c.addItem(<thermalfoundation:armor.boots_bronze>)
+c = addCriteria("getl","minecraft:inventory_changed")
+c.addItem(<<thermalfoundation:armor.legs_bronze>)
+setPos(-83,-37)

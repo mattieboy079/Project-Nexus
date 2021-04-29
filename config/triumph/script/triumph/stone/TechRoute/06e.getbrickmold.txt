@@ -1,0 +1,43 @@
+setTitle("Get a brickmold (ph)")
+setDescription("Craft a brick mold.")
+setIcon(<primal:brick_mold>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/05e.getmudclump")
+alwaysVisible()
+
+c = addCriteria("getbrickmold","minecraft:inventory_changed")
+c.addItem(<primal:brick_mold>)
+
+c = addCriteria("getbrickmold","minecraft:inventory_changed")
+c.addItem(<primal:brick_mold:1>)
+
+c = addCriteria("getbrickmold","minecraft:inventory_changed")
+c.addItem(<primal:brick_mold:2>)
+
+c = addCriteria("getbrickmold","minecraft:inventory_changed")
+c.addItem(<primal:brick_mold:3>)
+
+c = addCriteria("getbrickmold","minecraft:inventory_changed")
+c.addItem(<primal:brick_mold:4>)
+
+c = addCriteria("getbrickmold","minecraft:inventory_changed")
+c.addItem(<primal:brick_mold:5>)
+
+c = addCriteria("getbrickmold","minecraft:inventory_changed")
+c.addItem(<primal:brick_mold:6>)
+
+c = addCriteria("getbrickmold","minecraft:inventory_changed")
+c.addItem(<primal:brick_mold:7>)
+
+c = addCriteria("getbrickmold","minecraft:inventory_changed")
+c.addItem(<primal:brick_mold:8>)
+
+c = addCriteria("getbrickmold","minecraft:inventory_changed")
+c.addItem(<primal:brick_mold:9>)
+
+setPos(133,117)

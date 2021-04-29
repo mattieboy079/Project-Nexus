@@ -1,0 +1,15 @@
+setTitle("For the Forsieve-able Future")
+setDescription("Craft a sieve.")
+setIcon(<exnihilocreatio:block_sieve>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/04c.gethatchet")
+alwaysVisible()
+
+c = addCriteria("getsieve","minecraft:inventory_changed")
+c.addItem(<exnihilocreatio:block_sieve>)
+
+setPos(93,45)

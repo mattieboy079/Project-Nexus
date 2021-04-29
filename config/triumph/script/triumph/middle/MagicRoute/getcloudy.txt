@@ -1,0 +1,15 @@
+setTitle("get cloudy oil (ph)")
+setDescription("Obtain Cloudy Oil.")
+setIcon(<bewitchment:cloudy_oil>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:middle/MagicRoute/getoven")
+alwaysVisible()
+
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<bewitchment:cloudy_oil>)
+setPos(-107,-124)

@@ -1,0 +1,15 @@
+setTitle("get pure daisy (ph)")
+setDescription("Create a Pure Daisy using the Apotecary.")
+setIcon(<botania:specialflower, nbt:{type:"puredaisy"}>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+setFrameType("challenge")
+
+addParent("triumph:stone/MagicRoute/getaltar")
+
+c = addCriteria("apothecary","minecraft:inventory_changed")
+c.addItem(<botania:specialflower, nbt:{type:"puredaisy"}>)
+setPos(275,263)

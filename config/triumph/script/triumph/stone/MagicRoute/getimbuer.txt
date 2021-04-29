@@ -1,0 +1,14 @@
+setTitle("get imbuer (ph)")
+setDescription("Make any spell dust in the mortar and pestle.")
+setIcon(<roots:imbuer>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/MagicRoute/getspelldust")
+
+c = addCriteria("getmortar","minecraft:inventory_changed")
+c.addItem(<roots:imbuer>)
+setPos(27,297)

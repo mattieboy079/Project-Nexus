@@ -1,0 +1,17 @@
+//setTitle("Get a stone grill (ph)")
+setDescription("Craft a Stone Grill.")
+setIcon(<primal_tech:stone_grill>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/07e.getwetbricks")
+alwaysVisible()
+
+c = addCriteria("getdryingrack","minecraft:inventory_changed")
+c.addItem(<primal_tech:stone_grill>)
+
+
+setPos(213,117)

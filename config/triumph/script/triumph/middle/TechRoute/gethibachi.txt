@@ -1,0 +1,14 @@
+setTitle("get hibachi (ph)")
+setDescription("Craft an Hibachi.")
+setIcon(<betterwithmods:hibachi>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:middle/TechRoute/hellfireingot")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<betterwithmods:hibachi>)
+setPos(88,-157)

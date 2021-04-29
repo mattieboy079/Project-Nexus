@@ -1,0 +1,14 @@
+setTitle("make mossy cobblestone (ph)")
+setDescription("Get some mossy cobblestone by right-clicking a cobblestone block that is adjacent to water with the terra spores.")
+setIcon(<minecraft:mossy_cobblestone>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/MagicRoute/getterra")
+
+c = addCriteria("getterra","minecraft:inventory_changed")
+c.addItem(<minecraft:mossy_cobblestone>)
+setPos(-34,214)

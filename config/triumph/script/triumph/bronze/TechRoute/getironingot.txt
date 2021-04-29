@@ -1,0 +1,16 @@
+setTitle("The Middle Ages!")
+setDescription("Beware of rats.")
+setIcon(<minecraft:iron_ingot>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+setFrameType("challenge")
+
+addParent("triumph:bronze/TechRoute/getsmeltery")
+addRewardFunction("triumph:givemiddleages")
+alwaysVisible()
+
+c = addCriteria("getingot","minecraft:inventory_changed")
+c.addItem(<minecraft:iron_ingot>)
+setPos(477,-7)

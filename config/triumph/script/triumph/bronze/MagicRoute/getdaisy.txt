@@ -1,0 +1,16 @@
+setTitle("get pure daisy (ph)")
+setDescription("Create a Pure Daisy using the Apotecary.")
+setIcon(<botania:specialflower, nbt:{type:"puredaisy"}>)
+
+setShowToast(false)
+setAnnounceToChat(false)
+setRequirements("all")
+setRequiresParent(false)
+setFrameType("challenge")
+hideLines()
+
+addParent("triumph:bronze/TechRoute/bronzeingot")
+
+c = addCriteria("getbronzeage","triumph:completed_advancement")
+c.setAdvancement("triumph:stone/MagicRoute/getdaisy")
+setPos(93,-188)

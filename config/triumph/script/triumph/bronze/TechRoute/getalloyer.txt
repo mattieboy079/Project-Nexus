@@ -1,0 +1,14 @@
+setTitle("get alloy (ph)")
+setDescription("Craft an Alloy Tank.")
+setIcon(<tcomplement:alloy_tank>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/TechRoute/bronzeingot")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<tcomplement:alloy_tank>)
+setPos(-91,-159)

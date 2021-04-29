@@ -1,0 +1,17 @@
+setTitle("The Bronze Age!")
+setDescription("A beginning of a new era.")
+setIcon(<thermalfoundation:material:163>)
+
+setShowToast(false)
+setAnnounceToChat(false)
+setRequirements("all")
+setRequiresParent(false)
+setFrameType("challenge")
+
+addParent("triumph:bronze/root")
+hideLines()
+alwaysVisible()
+
+c = addCriteria("getingot","triumph:gamestage")
+c.setStage("bronzeage")
+setPos(-152,-123)

@@ -1,0 +1,31 @@
+setTitle("Dead or a Knife")
+setDescription("Craft a primitive knife.")
+setIcon(<primitivetools:primitive_knife_cwf>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/03a.breakflint")
+alwaysVisible()
+
+
+c = addCriteria("getknife","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_knife_cwf>)
+
+c = addCriteria("getknife","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_knife_cwv>)
+
+c = addCriteria("getknife","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_knife_cwl>)
+
+c = addCriteria("getknife","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_knife_cbf>)
+
+c = addCriteria("getknife","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_knife_cbv>)
+
+c = addCriteria("getknife","minecraft:inventory_changed")
+c.addItem(<primitivetools:primitive_knife_cbl>)
+setPos(53,-9)

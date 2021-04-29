@@ -1,0 +1,15 @@
+setTitle("get fey crafter (ph)")
+setDescription("Craft a Fey Crafter.")
+setIcon(<roots:fey_crafter>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/MagicRoute/getwildroot")
+addParent("triumph:stone/MagicRoute/getgrovestone")
+
+c = addCriteria("feycrafter","minecraft:inventory_changed")
+c.addItem(<roots:fey_crafter>)
+setPos(180,263)

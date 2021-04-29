@@ -1,0 +1,14 @@
+setTitle("get steel plate (ph)")
+setDescription("Obtain a steel plate.")
+setIcon(<thermalfoundation:material:352>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/getsteel")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<thermalfoundation:material:352>)
+setPos(68,-10)

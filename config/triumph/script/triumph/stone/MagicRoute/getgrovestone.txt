@@ -1,0 +1,14 @@
+setTitle("get grove stone(ph)")
+setDescription("Craft a Grove Stone and use the Grove Supplication spell on it in order to use the Fey Crafter.")
+setIcon(<roots:grove_stone>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/MagicRoute/getstaff")
+
+c = addCriteria("feycrafter","minecraft:inventory_changed")
+c.addItem(<roots:grove_stone>)
+setPos(129,297)

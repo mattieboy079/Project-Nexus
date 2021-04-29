@@ -1,0 +1,14 @@
+setTitle("get thaumonomicon (ph)")
+setDescription("Obtain Thaumonomicon.")
+setIcon(<thaumcraft:thaumonomicon>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/getsalismundus")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<thaumcraft:thaumonomicon>)
+setPos(27,-14)

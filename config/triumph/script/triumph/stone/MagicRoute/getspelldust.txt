@@ -1,0 +1,14 @@
+setTitle("get spell dust (ph)")
+setDescription("Make any spell dust in the mortar and pestle.")
+setIcon(<roots:spell_dust>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/MagicRoute/getmortar")
+
+c = addCriteria("getspelldust","minecraft:inventory_changed")
+c.addItem(<roots:spell_dust>)
+setPos(-34,272)

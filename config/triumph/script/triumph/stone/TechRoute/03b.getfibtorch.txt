@@ -1,0 +1,15 @@
+setIcon(<primal_tech:fibre_torch_lit>)
+setDescription("Light an un-lit fiber torch.")
+setTitle("I'll take the flame")
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/02.getfiber")
+addParent("triumph:stone/TechRoute/09e.getwhittle")
+alwaysVisible()
+
+c = addCriteria("getfiber","minecraft:inventory_changed")
+c.addItem(<primal_tech:fibre_torch_lit>)
+setPos(11,160)

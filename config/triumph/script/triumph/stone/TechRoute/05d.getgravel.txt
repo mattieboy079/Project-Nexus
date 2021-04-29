@@ -1,0 +1,16 @@
+setTitle("Get some gravel (ph)")
+setDescription("Dig up some gravel.")
+setIcon(<minecraft:gravel>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/04d.getspade")
+alwaysVisible()
+
+c = addCriteria("getgravel","minecraft:inventory_changed")
+c.addItem(<minecraft:gravel>)
+
+setPos(93,81)

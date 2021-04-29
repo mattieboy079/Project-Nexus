@@ -1,0 +1,16 @@
+setTitle("Blow your logs off")
+setDescription("Craft some wood piles.")
+setIcon(<forestry:wood_pile>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/04c.gethatchet")
+alwaysVisible()
+
+c = addCriteria("getlogstack","minecraft:inventory_changed")
+c.addItem(<forestry:wood_pile>)
+
+setPos(93,9)

@@ -1,0 +1,25 @@
+setTitle("Get a mudclump (ph)")
+setDescription("Get a mud clump.")
+setIcon(<primal:mud_clump>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("any")
+setRequiresParent(true)
+
+addParent("triumph:stone/TechRoute/04d.getspade")
+alwaysVisible()
+
+c = addCriteria("getmudclump","minecraft:inventory_changed")
+c.addItem(<primal:mud_clump>)
+
+c = addCriteria("getmudclump","minecraft:inventory_changed")
+c.addItem(<primal:terra_clump>)
+
+c = addCriteria("getmudclump","minecraft:inventory_changed")
+c.addItem(<primal:cinis_clump>)
+
+c = addCriteria("getmudclump","minecraft:inventory_changed")
+c.addItem(<primal:adobe_clump>)
+
+setPos(93,117)

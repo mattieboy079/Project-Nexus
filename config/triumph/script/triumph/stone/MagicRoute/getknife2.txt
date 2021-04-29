@@ -1,0 +1,15 @@
+setTitle("Oversized Toothpick")
+setDescription("Craft a Wooden Knife.")
+setIcon(<roots:wood_knife>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+
+addParent("triumph:stone/root")
+alwaysVisible()
+hideLines()
+
+c = addCriteria("getterra","minecraft:inventory_changed")
+c.addItem(<roots:wood_knife>)
+setPos(11,197)

@@ -1,0 +1,14 @@
+setTitle("Finally some good f*cking ore!")
+setDescription("Mine an ore vein under the ground.")
+setIcon(<geolosys:cluster>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:middle/TechRoute/getironpick")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<geolosys:cluster:*>)
+setPos(-87,-280)

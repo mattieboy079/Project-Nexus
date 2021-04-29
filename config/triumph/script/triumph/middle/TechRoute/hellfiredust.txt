@@ -1,0 +1,15 @@
+setTitle("get hellfire dust (ph)")
+setDescription("Craft Hellfire Dust in the Fey Crafter.")
+setIcon(<betterwithmods:material:16>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:middle/TechRoute/groundnether")
+addParent("triumph:middle/MagicRoute/gethellfire")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<betterwithmods:material:16>)
+setPos(12,-157)

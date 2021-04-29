@@ -1,0 +1,15 @@
+setTitle("get research table (ph)")
+setDescription("Make a place for you to do research.")
+setIcon(<thaumcraft:research_table>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/getmagicbook")
+alwaysVisible()
+
+c = addCriteria("getspreader","triumph:right_click_block")
+c.setItem(<thaumcraft:scribing_tools>)
+c.setBlock(<thaumcraft:table_wood>)
+setPos(62,31)

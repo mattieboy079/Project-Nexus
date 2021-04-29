@@ -1,0 +1,16 @@
+setTitle("get apothecary (ph)")
+setDescription("Use the magic of the Fey Crafter to construct an Apothecary.")
+setIcon("botania:altar")
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/MagicRoute/getfeycrafter")
+addParent("triumph:stone/MagicRoute/getflower")
+
+
+c = addCriteria("apothecary","minecraft:inventory_changed")
+c.addItem(<botania:altar>)
+setPos(220,263)

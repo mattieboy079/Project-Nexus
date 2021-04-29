@@ -1,0 +1,16 @@
+setTitle("get distillery(ph)")
+setDescription("Craft a Distillery.")
+setIcon(<bewitchment:distillery>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(false)
+
+addParent("triumph:middle/root")
+hideLines()
+alwaysVisible()
+
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<bewitchment:distillery>)
+setPos(-87,-79)

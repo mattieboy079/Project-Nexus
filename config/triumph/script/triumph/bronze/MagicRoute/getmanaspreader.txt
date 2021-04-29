@@ -1,0 +1,15 @@
+setTitle("get mana spreader (ph)")
+setDescription("Craft a Mana Spreader.")
+setIcon(<botania:spreader>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/alchemicalbrass")
+addParent("triumph:bronze/MagicRoute/getdaisy")
+alwaysVisible()
+
+c = addCriteria("getspreader","minecraft:inventory_changed")
+c.addItem(<botania:spreader>)
+setPos(109,-131)

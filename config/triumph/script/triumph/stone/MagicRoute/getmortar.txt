@@ -1,0 +1,18 @@
+setTitle("get mortar (ph)")
+setDescription("Craft Mortar and Pestle.")
+setIcon(<roots:mortar>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+
+addParent("triumph:stone/root")
+alwaysVisible()
+hideLines()
+
+c = addCriteria("getmortar","minecraft:inventory_changed")
+c.addItem(<roots:mortar>)
+
+c = addCriteria("getpestle","minecraft:inventory_changed")
+c.addItem(<roots:pestle>)
+setPos(-82,247)

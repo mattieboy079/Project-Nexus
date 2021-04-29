@@ -1,0 +1,14 @@
+setTitle("get hellfire ingot (ph)")
+setDescription("Infuse an Octine ingot to get Concentrated Hellfire.")
+setIcon(<betterwithmods:material:17>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:middle/TechRoute/hellfiredust")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<betterwithmods:material:17>)
+setPos(50,-157)

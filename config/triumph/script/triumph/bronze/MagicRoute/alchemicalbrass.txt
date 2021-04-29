@@ -1,0 +1,16 @@
+
+setTitle("get alchemical brass (ph)")
+setDescription("Turn Brass into Alchemical Brass.")
+setIcon(<thaumcraft:ingot:2>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:bronze/MagicRoute/getcrucible")
+addParent("triumph:bronze/TechRoute/getbrass")
+alwaysVisible()
+
+c = addCriteria("getmelter","minecraft:inventory_changed")
+c.addItem(<thaumcraft:ingot:2>)
+setPos(62,-131)

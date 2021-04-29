@@ -1,0 +1,15 @@
+setTitle("get staff (ph)")
+setDescription("Craft a staff to imbue with your spell dust.")
+setIcon(<roots:staff>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequirements("all")
+setRequiresParent(true)
+
+addParent("triumph:stone/MagicRoute/getimbuer")
+addParent("triumph:stone/MagicRoute/getwildroot")
+
+c = addCriteria("getstaff","minecraft:inventory_changed")
+c.addItem(<roots:staff>)
+setPos(79,297)

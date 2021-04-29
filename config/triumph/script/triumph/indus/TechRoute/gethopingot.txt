@@ -1,0 +1,14 @@
+setTitle("get HOP ingot (ph)")
+setDescription("Obtain a HOP ingot.")
+setIcon(<immersiveengineering:material:19>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/gethopdust")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<immersiveengineering:material:19>)
+setPos(293,66)

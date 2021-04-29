@@ -1,0 +1,15 @@
+setTitle("get electrode (ph)")
+setDescription("Obtain graphite electrode.")
+setIcon(<immersiveengineering:graphite_electrode>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:indus/TechRoute/gethopingot")
+addParent("triumph:indus/TechRoute/makemp")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<immersiveengineering:graphite_electrode>)
+setPos(310,98)

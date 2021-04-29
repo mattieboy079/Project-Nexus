@@ -1,0 +1,15 @@
+setTitle("enter nether (ph)")
+setDescription("Enter the Nether.")
+setIcon(<minecraft:obsidian>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(false)
+
+addParent("triumph:middle/root")
+hideLines()
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:changed_dimension")
+c.setDimensionDestination("the_nether")
+setPos(-46,-236)

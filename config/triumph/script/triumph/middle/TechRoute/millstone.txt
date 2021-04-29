@@ -1,0 +1,14 @@
+setTitle("get millstone (ph)")
+setDescription("Craft a millstone.")
+setIcon(<betterwithmods:single_machine>)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setRequiresParent(true)
+
+addParent("triumph:middle/TechRoute/getwindmill")
+alwaysVisible()
+
+c = addCriteria("gettool","minecraft:inventory_changed")
+c.addItem(<betterwithmods:single_machine>)
+setPos(-78,-188)
